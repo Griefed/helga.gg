@@ -2,80 +2,116 @@
 <html>
 <head>
 <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Apr 16, 2026 18:00:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-        }, 1000);
+	//https://www.w3schools.com/howto/howto_js_countdown.asp
+	var countDownDate = new Date("Apr 16, 2026 18:00:00").getTime();
+	var x = setInterval(function() {
+		var now = new Date().getTime();
+		var distance = countDownDate - now;
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+		+ minutes + "m " + seconds + "s ";
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		}
+	}, 1000);
 </script>
 
 <style>
 body {
-        background-image: url('cgg25-ns-01336.webp');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+	background-image: url('cgg25-ns-01336.webp');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 
-        font-family: Verdana, sans-serif;
-        font-weight: bold;
-        font-variant: small-caps;
-        color: white;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #fefffe;
+	text-shadow: 2px 2px 0px #1b2518;
 }
 
-.container-200 {
-        height: 200px;
-        position: relative;
-        border: 3px solid green;
+a {
+  color: #9abf24;
+}
+
+a:link {
+  color: #9abf24;
+}
+
+a:visited {
+  color: #9abf24;
+}
+
+a:hover {
+  color: #759f32;
+}
+
+a:active {
+  color: #759f32;
+}
+
+.container-42 {
+	padding: 42px;
+	position: relative;
 }
 
 .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+	position: absolute;
+	margin: 0;
+	display: flex;
+	top: 50%;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	vertical-align: sub;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .blur {
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
 }
 
 .border-green {
-        padding: 42px;
-        border: 3px solid green;
+	border: 3px solid green;
 }
 
 .bottom-right {
-        text-align: right;
-        vertical-align: sub;
-        position: absolute;
-        right: 0px;
+	text-align: right;
+	vertical-align: sub;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.bottom-left {
+	text-align: left;
+	vertical-align: sub;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.top-right {
+	text-align: right;
+	vertical-align: sub;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.top-left {
+	text-align: left;
+	vertical-align: sub;
+	position: absolute;
+	left: 0px;
+	top: 0px;
 }
 </style>
 
@@ -86,15 +122,30 @@ body {
 </head>
 
 <body>
-<div class=container-200">
+<div class="top-left">
+	By F.A.R.T. | Griefed
+</div>
 
-        <div class="center blur border-green">
-                <h1>Time to HEEEELGAAAAA</h1>
-                <p id="countdown"></p>
-        </div>
+<div class="top-right">
+	Source at <a href="http://github.com/Griefed/helga.gg">github/griefed/helga.gg</a>
+</div>
+
+
+<div class="container-42 center blur border-green">
+	<div>
+		<h1>16.04.2026 - 19.06.2026</h1>
+		<h2>Time to HEEEELGAAAAA</h2>
+		<p id="countdown"></p>
+		<p>More at <a href="https://www.caggtus.de">www.caggtus.de</a></p>
+	</div>
+</div>
+
+<div class="bottom-left">
+	Disclaimer: This website is not affiliated with Caggtus or Leipziger Messe.
 </div>
 
 <img src="archangel-pigeon.webp" alt="gurr"  width="244" height="367" class=bottom-right>
 
 </body>
 </html>
+
