@@ -1,6 +1,6 @@
 # helga.gg
 
-Project just for the heck of it. Also because I wanted a countdown to Caggtus LAN 2026.
+Project just for the heck of it. Also because I wanted a countdown to Caggtus LAN.
 
 - Background is Copyright Leipziger Messe | Niclas Schmidt: https://www.caggtus.de/files/caggtus/media/impressionen/cgg25/entertainment-area/cgg25-ns-01336.jpg
 - Pigeon is: https://www.gettyimages.de/detail/foto/archangel-pigeon-lizenzfreies-bild/582733168
@@ -11,3 +11,7 @@ Project just for the heck of it. Also because I wanted a countdown to Caggtus LA
 - Fire door from https://www.brangosteeldoor.com/en/fire-exit-doors/fire-door-with-panic-bar-resistant-to-120-minutes
 
 The aforementioned media-files are not included in this repository. Acquire them if you like, or substitute your own / change the code.
+
+Running the domain costs about 120€/year. If you wanna help me cover the costs, consider: 
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X31GM8DG)
